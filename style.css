@@ -1,3 +1,10 @@
+@font-face {
+    font-family: 'Cursed Timer'; /* No fallback font here */
+    src: url('CursedTimerUlil-Aznm.ttf') format('truetype'); /* Use 'truetype' as the format */
+    font-weight: normal;
+    font-style: normal;
+}
+
 body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     margin: 0;
@@ -14,27 +21,27 @@ body {
     flex-direction: column;
     align-items: center;
     color: white;
-    text-shadow: 0 0 5px black;
+    text-shadow: 0 0 3px black;
     font-size: 1.5rem;
     margin: 2rem;
 }
 
-#home-score {
-    background-color: rgba(0, 0, 0, .5);
-    padding: 4rem;
-    color: #F94F6D;
-    font-size: 3rem;
+.score-card {
     margin: 1rem;
-    border-radius: 3px;
 }
 
-#away-score {
+.score-card h2 {
+    margin: 1rem;
+}
+
+.score {
     background-color: rgba(0, 0, 0, .5);
     padding: 4rem;
     color: #F94F6D;
-    font-size: 3rem;
-    margin: 1rem;
+    font-size: 5rem;
+    margin: .5rem;
     border-radius: 3px;
+    font-family: 'Cursed Timer', sans-serif;
 }
 
 .btn {
@@ -43,11 +50,14 @@ body {
     color: white;
     padding: .5rem;
     border-radius: 3px;
+    font-family: 'Cursed Timer', sans-serif;
+    font-size: 1.5rem;
+    margin: .5rem;
 }
 
 .btn:hover {
     cursor: pointer;
-    opacity: 0.7;
+    opacity: 0.8;
 }
 
 @media screen and (min-width: 768px) {
@@ -55,9 +65,10 @@ body {
         background-position: top;
     }
     .container {
+        display: flex;
+        justify-content: space-evenly;
         flex-direction: row;
-    }
-    
+    } 
 }
 
 

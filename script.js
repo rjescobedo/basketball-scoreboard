@@ -47,3 +47,11 @@ function addThreeAway() {
     awayTeamScore += 3;
     awayScore.textContent = awayTeamScore;
 }
+
+// Reset Game
+function resetGame() {
+    homeTeamScore = 0;
+    awayTeamScore = 0;
+    homeScore.textContent = homeTeamScore;
+    awayScore.textContent = awayTeamScore;
+}
